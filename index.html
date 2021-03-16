@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Animated Portfolio Site</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icons8-monitor-64.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <!-- AOS CSS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Tailwind Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+</head>
+<body class="text-gray-800 antialiased">
+
+  <!-- Navigation -->
+  <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
+      <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+        <!-- Nav Left Side -->
+          <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+              <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white" href="https://github.com/jackbroomhead">
+                <!-- Nav Title -->
+                Jack Broomhead
+              </a>
+              <!-- Hamburger Menu (Mobile) -->
+              <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onclick="toggleNavbar('example-collapse-navbar')">
+                <!-- Icon -->
+                <i class="text-white fas fa-bars"></i>
+              </button>
+          </div>
+        <!-- Nav Right Side -->
+       
+      </div>
+    </div>
+  </nav>
+  <!-- End of Navigation -->
+
+  <!-- Splash Page -->
+  <main>
+    <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
+      <!-- Background Image -->
+      <div
+        class="absolute top-0 w-full h-full bg-center bg-cover"
+        style="background:url(https://images.unsplash.com/photo-1605247631064-d3ab83971aaf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1366&q=80)">
+        <!-- Overlay -->
+        <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
+      </div>
+      <!-- Text Over Main Background -->
+      <div class="container relative mx-auto">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+            <div class="pr-12">
+              <h1 class="text-white font-semibold text-5xl" data-aos="fade-up">
+                
+                Portfolio
+              </h1>
+              <p class="mt-4 text-lg text-gray-300" data-aos="fade-right"
+              data-aos-delay="1000">
+              I am a self-motivated and proactive individual, a recent MSc Computing graduate from Manchester Metropolitan University. In my spare time, I practice photography, and learning about cyber security and game development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Making Polygon Shape in Background -->
+      <div
+        class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+        style="height: 70px; transform: translateZ(0);"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-gray-300 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+    </div>
+    <!-- End of Splash Page -->
+
+    <!-- Services Section -->
+    <section class="pb-20 bg-gray-300 -mt-24">
+      <!-- 3 Card Section -->
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <!-- Card -->
+          <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center" data-aos="fade-right" data-aos-delay="1200">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                  <!-- Icon -->
+                  <i class="fas fa-robot"></i>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold">I'm A Robot</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  In 2019 I started my Tech journey at Code Nation, a coding bootcamp. Here I studied two intensive three week courses. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="w-full md:w-4/12 px-4 text-center"
+          data-aos="fade-up" data-aos-delay="1400">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
+                  <!-- Icon -->
+                  <i class="fas fa-atom"></i>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold">Atom Power</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  I then undertook an MSc conversion course at Manchester Metropolitan University, which I completed with Distinction.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="pt-6 w-full md:w-4/12 px-4 text-center" 
+          data-aos="fade-left" data-aos-delay="1600">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
+                  <!-- Icon -->
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold">Infinite Energy</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  I now teach as instructor for Coding with Kids, where I teach classes on different subject areas focused on coding and computer science. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Box and Card Container -->
+        <div class="flex flex-wrap items-center mt-32">
+          <!-- Text Box Container -->
+          <div class="w-full md:w-5/12 px-4 mr-auto ml-auto" data-aos="zoom-in-right">
+            <!-- Text Box -->
+            <div class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
+              <!-- Icon -->
+              <i class="fas fa-star text-xl"></i>
+            </div>
+            <h3 class="text-3xl mb-2 font-semibold leading-normal">
+              Manchester Metropolitan Graduate; MSc Computing (Distinction)
+            </h3>
+            <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+              Intensive conversion course focused on developing programs and software. Modules studied; Object Oriented and Web Programming, Mobile and Ubiquitous Computing, Information and Digital Media Systems and Enterprise Programming. 
+            </p>
+            <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+              This course also included a continual project/dissertation, in which I created a videogame using the Unity Engine. 
+            </p>
+            <a
+              href="https://github.com/jackbroomhead"
+              class="font-bold text-gray-800 mt-8"
+              >Explore my GitHub.
+            </a>
+          </div>
+
+          <!-- Image Cap & Text Card -->
+          <div class="w-full md:w-4/12 px-4 mr-auto ml-auto" data-aos="flip-left" data-aos-delay="1000">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-orange-500">
+              <!-- Image -->
+              <img
+                alt="..."
+                src="https://images.unsplash.com/photo-1604882735652-699f1c867bba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                class="w-full align-middle rounded-t-lg"
+              />
+              <blockquote class="relative p-8 mb-4">
+                <!-- Making Polygon Shape in Card -->
+                <svg
+                  preserveAspectRatio="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 583 95"
+                  class="absolute left-0 w-full block"
+                  style="height: 95px; top: -94px;"
+                >
+                  <polygon
+                    points="-30,95 583,95 583,65"
+                    class="text-orange-500 fill-current"
+                  ></polygon>
+                </svg>
+                <!-- Text Box -->
+                <h4 class="text-xl font-bold text-white">
+                  More Than Meets The Eye
+                </h4>
+                <p class="text-md font-light mt-2 text-white">
+                  Skills Learned: Java / C# / HTML / CSS / JavaScript / Android Studio / SQL / Unity / Design Patterns
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Services Section -->
+
+    <!-- About Section -->
+    <section class="relative py-20">
+      <!-- Making Polygon Shape in Background -->
+      <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px; transform: translateZ(0);"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-white fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+      <!-- Section Container -->
+      <div class="container mx-auto px-4"
+      >
+        <div class="items-center flex flex-wrap">
+          <div class="w-full md:w-4/12 ml-auto mr-auto px-4" data-aos="flip-right" data-aos-delay="1000"> 
+            <!-- Image -->
+            <img
+              alt="..."
+              class="max-w-full rounded-lg shadow-lg"
+              src="https://images.unsplash.com/photo-1605181905685-1ec0d054718b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+            />
+          </div>
+          <!-- Text Box Container-->
+          <div class="w-full md:w-5/12 ml-auto mr-auto px-4" data-aos="zoom-in-left">
+            <div class="md:pr-12">
+              <div class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
+                <!-- Icon -->
+                <i class="fas fa-rocket text-xl"></i>
+              </div>
+              <!-- Text Box -->
+              <h3 class="text-3xl font-semibold">Code Nation</h3>
+              <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                TLM Level 2 Certificate in Cyber Security and Digital Forensics; Pass A*.
+                 
+
+              TLM Level 2 Certificate in IT User Skills in Open Systems and Enterprise; Pass (pass/fail).
+              
+
+              </p>
+              <!-- List -->
+              <ul class="list-none mt-6">
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <!-- Icon -->
+                        <i class="fas fa-fingerprint"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">
+                        I learnt about key networking principles; OSI model, significant hardware, software and legislation surrounding cyber security.
+                      </h4>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <!-- Icon -->
+                        <i class="fab fa-html5"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">I set up and defended a WAMP server as part of the final project.</h4>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <!-- Icon -->
+                        <i class="far fa-paper-plane"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">I was introduced to coding with JavaScript, HTML, CSS and Xcode and VS. I created multiple iPhone apps as part of a group project and a website as part of my final solo project.</h4>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of About Section -->
+
+    <!-- Team Section -->
+    <section class="pt-20 pb-48">
+      <!-- Section Container -->
+      <div class="container mx-auto px-4">
+        <!-- Text Box -->
+        <div class="flex flex-wrap justify-center text-center mb-24">
+          <div class="w-full lg:w-6/12 px-4">
+            <h2 class="text-4xl font-semibold">Exposure To</h2>
+            <p class="text-lg leading-relaxed m-4 text-gray-600">
+             While at university and through independnent study I have had exposure to Java, C#, HTML, CSS, JavaScript, SQL, OOP Principles, PHP, Python alongside software such as Android Studio and Unity.
+            </p>
+          </div>
+        </div>
+        <!-- Flex Row Container -->
+        <div class="flex flex-wrap">
+          <!-- Item -->
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in" >
+            <div class="px-6">
+              <!-- Image -->
+              <img
+                alt="..."
+                src="https://assets.stickpng.com/thumbs/58480979cef1014c0b5e4901.png"               
+                class="shadow-lg rounded-full max-w-full mx-auto"
+                style="max-width: 120px;"
+              />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">Java</h5>
+               
+                
+              </div>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in" data-aos-delay="400">
+            <div class="px-6">
+              <!-- Image -->
+              <img
+                alt="..."
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/480px-JavaScript-logo.png"
+                class="shadow-lg rounded-full max-w-full mx-auto"
+                style="max-width: 120px;"
+              />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">JavaScript</h5>
+               
+               
+              </div>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in" data-aos-delay="600">
+            <div class="px-6">
+              <!-- Image -->
+              <img
+                alt="..."
+                src="https://d1nr5wevwcuzuv.cloudfront.net/stores/avatars/1189929/medium/Shop_Python_Logo_Square.png?1536345410"
+                class="shadow-lg rounded-full max-w-full mx-auto"
+                style="max-width: 120px;"
+              />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">Python</h5>
+                
+               
+              </div>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in" data-aos-delay="800">
+            <div class="px-6">
+              <!-- Image -->
+              <img
+                alt="..."
+                src="https://pluralsight.imgix.net/paths/path-icons/csharp-e7b8fcd4ce.png"
+                class="shadow-lg rounded-full max-w-full mx-auto"
+                style="max-width: 120px;"
+              />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">C#</h5>
+                
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Team Section -->
+
+    <!-- Contact Section -->
+    <section class="pb-20 relative block bg-gray-900">
+      <!-- Making Polygon Shape in Background -->
+      <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px; transform: translateZ(0);"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-gray-900 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+      <!-- Section Container -->
+      <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+        <!-- Text Box -->
+        <div class="flex flex-wrap text-center justify-center">
+          <div class="w-full lg:w-6/12 px-4">
+            <h2 class="text-4xl font-semibold text-white">Coding Instructor</h2>
+            <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
+              In the role as an online instructor over Zoom, I teach lessons to children from around the world in different areas of coding, game development, and technology.
+            </p>
+          </div>
+        </div>
+        <!-- Flex Row Container -->
+        <div class="flex flex-wrap mt-12 justify-center">
+          <!-- Item -->
+          <div class="w-full lg:w-3/12 px-4 text-center" data-aos="fade-in" data-aos-delay="600">
+            <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+              <!-- Icon -->
+              <i class="fas fa-medal text-xl"></i>
+            </div>
+            <!-- Text Box -->
+            <h5 class="text-xl mt-5 font-semibold text-white">
+              Subjects
+            </h5>
+            <p class="mt-2 mb-4 text-gray-500">
+              I teach Java, Web Development (HTML/CSS/JavaScript), 3D Unity Game Development,  Minecraft Modding Java, Roblox Game Development (Lua), Scratch Game Development, Python, App Development.
+            </p>
+          </div>
+          <!-- Item -->
+          <div class="w-full lg:w-3/12 px-4 text-center" data-aos="fade-in" data-aos-delay="400">
+            <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+              <!-- Icon -->
+              <i class="fas fa-poll text-xl"></i>
+            </div>
+            <!-- Text Box -->
+            <h5 class="text-xl mt-5 font-semibold text-white">
+              Results
+            </h5>
+            <p class="mt-2 mb-4 text-gray-500">
+              I consistently receive fantastic feedback from parents and students. One standout achievement from my time there is two months into my employment, trainees were invited by management to shadow my lessons in order to learn.
+            </p>
+          </div>
+          <!-- Item -->
+          <div class="w-full lg:w-3/12 px-4 text-center" data-aos="fade-in"> 
+            <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+              <!-- Icon -->
+              <i class="fas fa-lightbulb text-xl"></i>
+            </div>
+            <!-- Text Box -->
+            <h5 class="text-xl mt-5 font-semibold text-white">Motivation</h5>
+            <p class="mt-2 mb-4 text-gray-500">
+              This role requires a commitment to constant learning, as each week I am teaching a variety of different topics. I need to learn them effectively in order to teach children, many of whom have little/no experience with coding. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Form -->
+    <section class="relative block py-24 lg:pt-0 bg-gray-900">
+      <!-- Container -->
+      <div class="container mx-auto px-4" data-aos="fade-in">
+        <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
+              <div class="flex-auto p-5 lg:p-10">
+                <img src="jackfilm1.jpg" alt="Girl in a jacket" width="500" height="600">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Contact Section -->
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="relative bg-gray-300 pt-8 pb-6">
+    <!-- Making Polygon Shape in Background -->
+    <div
+      class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+      style="height: 80px; transform: translateZ(0);"
+    >
+      <svg
+        class="absolute bottom-0 overflow-hidden"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        version="1.1"
+        viewBox="0 0 2560 100"
+        x="0"
+        y="0"
+      >
+        <polygon
+          class="text-gray-300 fill-current"
+          points="2560 0 2560 100 0 100"
+        ></polygon>
+      </svg>
+    </div>
+  
+  </footer>
+  <!-- End of Footer Section -->
+</body>
+<!-- AOS .JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" ></script>
+<script>
+  AOS.init({
+    delay: 200, // values from 0 to 3000, with step 50ms
+  duration: 1500, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  }
+  );
+</script>
+<!-- Navigation Script -->
+<script>
+  function toggleNavbar(collapseID) {
+    document.getElementById(collapseID).classList.toggle("hidden");
+    document.getElementById(collapseID).classList.toggle("block");
+  }
+</script>
+</html>
